@@ -15,8 +15,7 @@
   --font-2: "Open Sans", sans-serif;
 
   --time: 250ms;
-  --formula:cubic-bezier(0.4, 0, 0.2, 1);
-
+  --formula: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -405,7 +404,6 @@ img {
 
   opacity: 0;
   transition: opacity var(--time) var(--formula) var(--time);
-
 }
 .actions button {
   margin: 0;
@@ -436,6 +434,8 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid #ffffff;
+
+  transition: background-color var(--time) var(--formula);
 }
 
 .share {
@@ -448,6 +448,8 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid #ffffff;
+
+  transition: background-color var(--time) var(--formula);
 }
 
 .clock {
@@ -460,6 +462,8 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid #ffffff;
+
+  transition: background-color var(--time) var(--formula);
 }
 
 .basket {
@@ -472,6 +476,8 @@ img {
   background-repeat: no-repeat;
   background-origin: padding-box;
   border: 1px solid #ffffff;
+
+  transition: background-color var(--time) var(--formula);
 }
 .basket::after {
   content: "add to cart";
@@ -586,7 +592,7 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-   /*border: 1px solid var(--white-color);*/
+  /*border: 1px solid var(--white-color);*/
   border-radius: 5px;
   margin: 0;
 }
@@ -606,12 +612,10 @@ img {
   content: "";
   background-color: rgba(0, 0, 0, 0.3);
 
-   transform: translateY(100%);
-  transition: transform var(--time) var(--formula) ;
-
+  transform: translateY(100%);
+  transition: transform var(--time) var(--formula);
 }
 
 .overlay:hover::before {
-transform: translateY(0);
-
+  transform: translateY(0);
 }
